@@ -1,0 +1,124 @@
+tablero:
+n = 5
+tablero = [[(i * n + j + 1) for j in range(n)] for i in range(n)]
+el tablero se trata de una compresion de listas que tiene una estructura similar a la sig:
+[expresion for item in iterable if condicion]
+El tablero se trata de 2 listas anidadas:
+[
+ [ 1,  2,  3,  4,  5],
+ [ 6,  7,  8,  9, 10],
+ [11, 12, 13, 14, 15],
+ [16, 17, 18, 19, 20],
+ [21, 22, 23, 24, 25]
+]
+
+Todos los movimientos posibles se   representan en coordenadas:
+movimientos = [(-1, 0), (1, 0), (0, -1), (0, 1),
+               (-1, -1), (-1, 1), (1, -1), (1, 1)]
+
+por ejemplo, (-1, 0) es un movimiento a la izquierda. 
+(1, 0) es un movimiento a la derecha
+(0, 1) es un movimiento hacia abajo, y asi sucesivamente.
+
+La logica para poder encontrar las rutas mas optimas esta basada en un algoritmo bfs (busqueda en anchua/amplitud)
+En un bfs se utiliza un cola (FIFO) para mantener un registro de los nodos que ya han sido visitados
+Pasos del BFS:
+1. Inicializa los nodos que ya han sido visitados partiendo del nodo inicial (o el punto del que partimos hacia la casilla a encontrar)
+2. Marca el nodo inicial como visitado y guarda en la cola los nodos hijos/vecinos. 
+3. Accede al nodo hijo mas cercano y lo marca como visitado, si tiene nodos hijos/vecinos los guarda en la cola para visitarlos. 
+4. Repite el mismo proceso con todos los nodos hasta encontrar al nodo que estamos buscando, y simplemente marca la ruta que le llevo para encontrarlo.
+
+Ejemplo del algoritmo BFS en el codigo:
+def bfs(inicio, meta):
+    cola = deque([(inicio, [inicio])])  
+    visitado = set([inicio])            
+
+    while cola:
+        posicion_actual, camino = cola.popleft()
+        if posicion_actual == meta:
+            return camino
+
+        x_actual, y_actual = posicion_actual
+
+        for movimiento in movimientos:
+            nuevo_x, nuevo_y = x_actual + movimiento[0], y_actual + movimiento[1]
+            if posicion_valida(nuevo_x, nuevo_y):
+                nueva_posicion = (nuevo_x, nuevo_y)
+                if nueva_posicion not in visitado:
+                    visitado.add(nueva_posicion)
+                    cola.append((nueva_posicion, camino + [nueva_posicion]))
+
+    return None
+
+Se comienza declarando las sig estructuras:
+cola = deque([(inicio, [inicio])])  -> inicio es la coordenada de la casilla inicial, e [inicio] es una lista que 
+almacena las coordenadas que seguimos para llegar a esa casilla
+
+visitado = set([inicio]) -> se utiliza un set ya que no permite elementos repetidos, por lo que cuando se esta intentando acceder
+a un nodo que ya ha sido visitado o una coordenada que ya se encuentra en el set, no la volvera a agregar. 
+
+while cola: -> mientras haya nodos por visitar, la cola seguira repitiendo el mismo proceso
+
+posicion_actual, camino = cola.popleft() -> regresa el primer elemento de la cola (por eso es importante el FIFO) 
+y asigna la coordenada en posicion actual y en camino se guarda la lista  de coordenadas que tomo llegar a ese camino.
+        if posicion_actual == meta: -> si la coordenada de la posicion actual es la coordenada esperada, regresa la lista de coordenadas
+            return camino
+
+x_actual, y_actual = posicion_actual -> obtiene el nodo actual que se va a revisar 
+
+ for movimiento in movimientos:
+            nuevo_x, nuevo_y = x_actual + movimiento[0], y_actual + movimiento[1] -> asgina nuevas cordenadas basandose en todas las combinaciones
+posibles que puede tener dada la lista de movimientos permitidos
+
+if posicion_valida(nuevo_x, nuevo_y): -> si las nuevas coordendas son accesibles avanza, si no lo son agrega el movimiento siguiente. 
+                nueva_posicion = (nuevo_x, nuevo_y) ->actualiza las nuevas coordendas 
+                if nueva_posicion not in visitado: -> revisa si la casilla a la que se movio no esta en el set de visitados para poder agregarlo
+                    visitado.add(nueva_posicion) -> si el set no tenia esa casilla simplemente lo agrega
+                    cola.append((nueva_posicion, camino + [nueva_posicion])) -> agrega a la cola de nodos el nuevo nodo a visitar
+junto con los nodos que tuvo que visitar para poder llegar ahi.
+
+En algun punto despues de visitar todos los nodos/casillas va a encontrar el nodo objetivo si es que la coordenada dada esta en el tablero, y ahi 
+es cuando el algoritmo termina y regresa el camino que es una lista de coordenadas
+
+Ejemplo: llegar de la casilla 1 a la casilla 7
+casilla 1: 0, 0
+casilla 7: 1, 1
+
+cola  = (0, 0), [(0, 0)]
+visitado = (0, 0)
+
+posicion_actual, camino = cola.popleft()
+posicion actual = (0, 0), camino = [(0, 0)]
+
+como posicion actual (0, 0) es distinto de (1,1) entonces sigue el algoritmo.
+x_actual, y_actual = posicion_actual
+x_actual = 0, y_actual = 0;
+
+for movimiento in movimientos: explora todos los caminos posibles: [(-1, 0), (1, 0), (0, -1), (0, 1),
+               (-1, -1), (-1, 1), (1, -1), (1, 1)]
+
+nuevo_x, nuevo_y = x_actual + movimiento[0], y_actual + movimiento[1]
+nuevo_x = 0 + -1 = -1
+nuevo_y = 0 + 0 = 0;
+
+if posicion_valida(nuevo_x, nuevo_y): llama a posicion valida:
+def posicion_valida(x, y):
+    return 0 <= x < n and 0 <= y < n
+
+entonces regresa false porque -1 no es mayor a 0 en x.
+
+entonces va recorriendo todo el conjunto de los movimientos posibles hasta que encuentra un conjunto que sea valido.
+
+nuevo_x = 0 + -1 = 1
+nuevo_y = 0 + 0 = 0;
+
+nueva_posicion = (nuevo_x, nuevo_y)
+nueva_posicion = 1, 0
+
+if nueva_posicion not in visitado: -> visitado solamente tiene 0, 0 entonces 
+visitado.add(nueva_posicion), se agrega a visitado la nueva posicion
+visitado = [(0, 0) , (1, 0)]
+
+cola.append((nueva_posicion, camino + [nueva_posicion])) -> se agrega al camino la nueva posicion 1,0 
+
+y va repitiendo el mismo proceso con todos los movimientos permitidos hasta encontrar a la casilla correcta y devuelve su camino.
