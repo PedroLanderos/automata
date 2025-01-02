@@ -1,0 +1,11 @@
+Evaluación del autómata:
+Caracter leído | Estado actual        -> Próximo estado
+------------------------------------------------------------
+a               | Q26                  -> Q28            
+c               | Q28                  -> Q17            
+o               | Q17                  -> Q20            
+s               | Q20                  -> Q24            
+o               | Q24                  -> Q0             
+                | Estado de aceptación alcanzado: Q0
+------------------------------------------------------------
+Estado final: Q26

@@ -1,0 +1,6 @@
+1. construir el automata basado en las palabras
+2. si el automata no es determinista, hacerlo determinista 
+3. una vez teniendo el automata finito reducirlo
+4. una vez reducido, construir el grafo que va a representar el autoamta.
+5. extraer el texto del txt o del html y correr el grafo para que haga el conteo de las palabras. Ir guardando todo el historial del automata 
+y si encuentra alguna palabra hacer la distincion con algun salto de linea. PENDIENTE

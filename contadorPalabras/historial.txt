@@ -1,0 +1,120 @@
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
+Procesando palabra: 'acd'
+  Estado actual: Q3, Símbolo: 'a', Próximo estado: Q4
+  Estado actual: Q4, Símbolo: 'c', Próximo estado: Q1
+  Estado actual: Q1, Símbolo: 'd', Próximo estado: Q0
+  Palabra 'acd' aceptada en el estado final: Q0
+
