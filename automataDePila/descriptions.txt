@@ -1,0 +1,3 @@
+Estado: q0, Pila: [Vacia], Simbolo: 1
+
+La cadena no es valida y no pertenece al lenguaje.
