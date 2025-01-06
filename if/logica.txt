@@ -1,0 +1,102 @@
+S -> iCtSA
+A -> ;eS | epsilon
+
+cadena = S 
+
+cadena = iCtSA, A puede valer vacio o puede ser ;eS
+
+
+solo quiero un if
+cadena = iCt 
+i = if
+C = (){}
+t = codigo adentro
+
+if(){codigo adentro}
+
+CASO 2:
+iCtSA y A no sea vacio, sino que sea ;eS
+
+cadena = iCtS;eS == iCtS;eiCtSA 
+                        ;eiCt
+                        ;eiCtiCt
+cadena final = iCtS;eiCtiCt
+
+if()
+{
+
+}
+else if()
+{
+    if()
+    {
+        if(){
+
+        }
+        else if(){
+            if(){
+
+            }
+        }
+    }
+    else if(){
+
+    }
+}
+                       
+
+
+iCtiCt;eictEE
+
+if(){
+    if()
+    {
+
+    }
+    else if()
+    {
+
+    }
+}
+vacio nada 
+
+iCt;eictE
+if()
+{
+
+}
+else(){
+
+}
+
+                    
+
+
+iCtiCtiCtEEE
+
+if(){
+    if(){
+        if(){
+
+        }
+    }
+}
+
+
+iCt iCt E;eict ;eict E
+
+if(){
+    if(){
+
+    }
+    else if(){
+
+    }
+    else if(){
+
+    }
+
+}
+
+iCtiCtiCtEE;eictE
+
